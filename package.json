@@ -1,0 +1,36 @@
+{
+  "name": "back-planitpoker",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon App.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwt-decode": "^4.0.0",
+    "mongodb": "^6.6.1",
+    "mongoose": "^8.3.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "pino": "^9.4.0",
+    "pino-pretty": "^11.2.2",
+    "zod": "^3.23.8",
+    "zod-express-middleware": "^1.4.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.10.0",
+    "eslint": "^9.10.0",
+    "globals": "^15.9.0"
+  }
+}

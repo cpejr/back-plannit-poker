@@ -1,1 +1,3 @@
-# back-plannit-poker
+# back-PlanITPoker
+
+frontend: https://github.com/Thalesed/PlanITPoker.git 
