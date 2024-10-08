@@ -23,7 +23,7 @@ const UserSchema = new Schema({
   expiresAt: {
     type: Date,
     required: true,
-    expires: 0 
+    expires: 0,
   },
 });
 

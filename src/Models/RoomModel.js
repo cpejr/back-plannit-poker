@@ -17,29 +17,34 @@ const RoomSchema = new Schema({
   users: [
     {
       type: mongoose.Schema.Types.ObjectId,
-      ref: 'users',
+      ref: "users",
     },
   ],
   maxUsers: {
     type: Number,
     default: 18,
   },
-  show:{
-    type: Boolean, 
+  show: {
+    type: Boolean,
   },
   expiresAt: {
     type: Date,
     required: true,
-    expires: 0 
+    expires: 0,
+  },
+  currentTask: {
+    type: String,
+    required: false,
+    default: null,
   },
 });
 
-RoomSchema.virtual('id').get(function() {
+RoomSchema.virtual("id").get(function () {
   return this.code;
 });
 
-RoomSchema.set('toJSON', { virtuals: true });
-RoomSchema.set('toObject', { virtuals: true });
+RoomSchema.set("toJSON", { virtuals: true });
+RoomSchema.set("toObject", { virtuals: true });
 
 const RoomModel = mongoose.model("room", RoomSchema);
 
