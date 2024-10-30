@@ -25,6 +25,10 @@ const UserSchema = new Schema({
     required: true,
     expires: 0,
   },
+  hasVoted: {
+    type: Boolean,
+    default: false,
+  }
 });
 
 const UserModel = mongoose.model("users", UserSchema);
